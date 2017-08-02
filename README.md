@@ -5,11 +5,11 @@ Submitted by: Nalini Shah
 
 ## User Stories
 
-* [X] User can view Category items
-* [X] User can create a Category
-* [X] User can view To-Do items
-* [X] User can create a To-Do item
-* [X] User can delete a To-Do item
+* [X] User can view category items
+* [X] User can create a category
+* [X] User can view to-do items
+* [X] User can create a to-do item
+* [X] User can delete a to-do item
 
 ## Video Walkthrough 
 
