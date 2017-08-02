@@ -12,9 +12,8 @@ class AddToDoViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var cancelButton: UIBarButtonItem!
-    
-    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+ 
     
     var toDoItem: String?
     
@@ -27,8 +26,12 @@ class AddToDoViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if sender as? NSObject != self.doneButton {
+        if sender as? NSObject != self.saveButton {
             return
+        }
+        
+        if (self.textField.text?.characters.count)! > 0 {
+            self.toDoItem = self.textField.text!
         }
     }
     
