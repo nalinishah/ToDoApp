@@ -18,7 +18,7 @@ import UIKit
         super.viewDidLoad()
 
         tableView.register(UINib(nibName: "ToDoTableViewCell", bundle: nil), forCellReuseIdentifier: "toDoCell")
-        self.title = "To-Do"
+        self.title =  self.category! + ": To-Do"
     }
 
     override func didReceiveMemoryWarning() {
